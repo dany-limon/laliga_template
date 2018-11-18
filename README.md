@@ -1,44 +1,169 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Alegaciones frontal. Desarrollada en ReactJS.
 
-In the project directory, you can run:
+## Create React App
 
-### `npm start`
+This project was bootstrapped with Create React App
+* [repo](https://github.com/facebookincubator/create-react-app).
+* [doc](https://facebook.github.io/create-react-app)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Scripts
 
-### `npm test`
+* Des: ```yarn start```
+* Test: ```yarn test``` | ```yarn test --coverage```
+* Prod:
+    * build --> ```yarn build``` 
+    * analyze --> ```yarn analyze```
+* Style guide --> ```yarn styleguide```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Proyect Folder Structure
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [Better organize your React App](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1)
+* [Organizing a React Native Project](https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```
+  /
+  ├── public    
+        ├── index.html                  
+  ├── index.js                     
+  ├── src/                          
+        ├── api/            
+        ├── assets/                   
+        ├── config/         
+        ├── redux/                                
+        ├── components/                       
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Assets Folder Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+  /                  
+  ├── src/                                   
+        ├── assets/    
+            ├── fonts/   
+            ├── images/ 
+            ├── i18n/             
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Config Folder Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+  /                   
+  ├── src/                                       
+        ├── config/     
+            ├── api
+            ├── paths  
+            ├── redux
+            ├── styled      
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Redux Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [Reducks - duck folders](https://github.com/alexnm/re-ducks)
+* Actions with [Flux Standard Action pattern](https://github.com/redux-utilities/flux-standard-action)
+
+```
+  /                 
+  ├── src/                                 
+        ├── redux/     
+            ├── auth/          
+            ├── navigation/  
+            ...
+```
+
+```
+<duck>/
+    ├── index.js        
+    ├── actions.js      --> Simple actions with Flux Standard Action pattern
+    ├── operations.js   --> Asyncs actions (thunks)
+    ├── reducers.js     --> Reducer 
+    ├── tests.js        --> Test
+    ├── types.js        --> Simple actions types
+    ├── utils.js        --> Other functions
+```
+
+
+## Visual Components Folder Structure
+
+* [Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
+* [atomic design](http://bradfrost.com/blog/post/atomic-web-design/)
+* [¿Qué es el diseño atómico?](https://medium.com/pixel-perfect/qué-es-el-diseño-atómico-a5cbed06688e)
+
+```                   
+  ├── src/                                                    
+        ├── components/             
+            ├── system/    
+            ├── pages/       
+            ├── organisms/          
+            ├── molecules/          
+            ├── atoms/              
+```
+
+```
+<component>/
+    ├── container.js  --> Redux Container Component
+    ├── index.js      --> index/dinamic imports (react-loadable)
+    ├── view.js       --> Presentational Component 
+    ├── utils.js      --> Internal utils
+    ├── styles.css    --> old css clases
+    ├── styled.js     --> Styled components
+    ├── readme.md     --> Style Guidist
+    ├── test.js       --> Correct render test
+```
+
+
+## Real Hot Reloading
+[hot-reloading-create-react-app](https://medium.com/superhighfives/hot-reloading-create-react-app-73297a00dcad)
+
+
+## Code Formatter with Prettier
+
+* [repo](https://github.com/prettier/prettier)
+* [doc](https://prettier.io/)
+
+- Install prettier (VSCode extension)
+- Menu>Preferences>config>User Config
+- Add:
+```
+    "editor.formatOnSave": false,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    }
+```
+
+
+## Styled Components
+
+* [repo](https://github.com/styled-components)
+* [doc](https://www.styled-components.com/)
+* Import styled from macro 'styled-components/macro'
+* Macro Config by babel-plugin-macros.config.js
+* All components with styled-components:
+    - Have the suffix 'Styled'
+    - They are inside styled.js
+
+
+## React Style Guidist
+
+* [repo](https://github.com/styleguidist/react-styleguidist)
+* [doc](https://react-styleguidist.js.org/docs/getting-started.html)
+* Components with react-styleguidist have readme.md
+* Config by styleguide.config.js
+
+
+## Main Libraries
+
+* [react-router](https://github.com/ReactTraining/react-router)
+* [Redux](https://github.com/reactjs/redux/)
+| [Redux Thunk](https://github.com/gaearon/redux-thunk)
+| [Redux Persist](https://github.com/rt2zz/redux-persist)
+| [Redux Logger](https://github.com/LogRocket/redux-logger)
+* [Axios](https://github.com/axios/axios)
+* [Lodash](https://lodash.com/)
+* [Moment](https://momentjs.com/)
+* [Jest](https://facebook.github.io/jest/)

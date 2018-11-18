@@ -1,0 +1,63 @@
+/***********************************************************************************************************************
+                                          SPINNER
+***********************************************************************************************************************/
+.spinner-active .LaLigaHolder-bg .LaLiga-bg  {-webkit-animation:  50s spin 0.4s linear infinite;
+    animation: 50s spin 0.4s linear infinite;}
+.LaLigaHolder-bg {
+    -webkit-transition: 1s all 0.4s ease-in-out; transition: 1s all 0.4s ease-in-out; background: rgba(3,255,255,0);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.spinner-active .LaLigaHolder-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background: rgba(255,255,255,0.9);
+    -webkit-transition: 1s all 0.4s ease-in-out; transition: 1s all 0.4s ease-in-out;
+}
+.LaLigaHolder-bg .LaLiga-bg {
+    background-image: url(./completo-azul.png) !important;
+    width: 1200px;
+    height: 1200px;
+    position: absolute;
+    right: -600px;
+    top: -60px;
+    opacity: .25;
+    background-size: contain;
+    -webkit-animation:  50s spin 0.4s linear infinite;
+    animation: 50s spin 0.4s linear infinite;
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+/* TEXT */
+.spinner-active .spinner-text { opacity: 1; }
+.spinner-text { opacity: 0; color: rgba(0, 119, 200, 0.5); font-size: 37px;
+    -webkit-transition: 1s opacity 0.4s ease-in-out; transition: 1s opacity 0.4s ease-in-out; position: fixed; top: 44vh;
+    left: 40vw; line-height: 60px; font-family: CoreSans; font-weight: 400; }
+ .spinner-text span {  font-size: 50px; animation: 1.4s blink infinite; }
+.spinner-active .spinner-text span:nth-child(2) { animation-delay: .2s; }
+.spinner-active .spinner-text span:nth-child(3) {  animation-delay: .4s; }
+/* Keyframes */
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes blink { 0% { opacity: .2; } 20% { opacity: 1; } 100% { opacity: .2; } }
+.spinner-enter {
+    -webkit-transition: 1s background 0.4s ease-in-out; transition: 1s background 0.4s ease-in-out; background: rgba(3,255,255,0.9);
+    &.spinner-enter-active {
+        -webkit-transition: 1s background 0.4s ease-in-out; transition: 1s background 0.4s ease-in-out; background: rgba(255,54,255,0.9);
+    }
+}
+.spinner-leave {
+    -webkit-transition: 1s background 0.4s ease-in-out; transition: 1s background 0.4s ease-in-out; background: rgba(255,255,6,0);
+    &.spinner-leave-active {
+        -webkit-transition: 1s background 0.4s ease-in-out; transition: 1s background 0.4s ease-in-out; background: rgba(1,255,255,0);
+    }
+}
