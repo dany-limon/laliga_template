@@ -12,10 +12,14 @@ const LoggedApp = () => {
   )
 }
 
-const UnauthorizedApp = () => <div />
+//const UnauthorizedApp = () => <div />
 
 const Routes = ({ token }) => {
-  const App = token ? <LoggedApp /> : <UnauthorizedApp />
-  return <SpinnerBackground>{App}</SpinnerBackground>
+  //const App = token ? <LoggedApp /> : <UnauthorizedApp />
+  return (
+    <SpinnerBackground>
+      <LoggedApp />
+    </SpinnerBackground>
+  )
 }
 export default Routes

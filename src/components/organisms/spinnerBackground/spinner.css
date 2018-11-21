@@ -28,7 +28,7 @@
   transition: 1s all 0.4s ease-in-out; }
 
 .LaLigaHolder-bg .LaLiga-bg {
-  background-image: url(./completo-azul.png) !important;
+  background-image: url(./completo-gris.png) !important;
   width: 1200px;
   height: 1200px;
   position: absolute;
