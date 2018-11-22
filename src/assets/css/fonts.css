@@ -1,5 +1,12 @@
 
 @font-face {
+    font-family : 'LaLigaDorsal';
+    src         : url('../fonts/LaLiga_Dorsal.otf');
+    font-weight : 100;
+    font-style  : normal;
+}
+
+@font-face {
     font-family : 'CoreSans';
     src         : url('../fonts/S-Core - CoreSansC-15Thin.otf');
     font-weight : 100;

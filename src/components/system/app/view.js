@@ -4,7 +4,8 @@ import { PersistGate } from 'redux-persist/es/integration/react'
 import { BrowserRouter } from 'react-router-dom'
 import Routes from '../routes'
 import { store, persistor } from '../../../config/redux'
-import { GlobalStyle } from '../../../config/styled'
+import { GlobalStyle, theme } from '../../../config/styled'
+import { ThemeProvider } from 'styled-components/macro'
 
 export default () => (
   <React.Fragment>
@@ -12,7 +13,9 @@ export default () => (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
-          <Routes />
+          <ThemeProvider theme={theme}>
+            <Routes />
+          </ThemeProvider>
         </BrowserRouter>
       </PersistGate>
     </Provider>

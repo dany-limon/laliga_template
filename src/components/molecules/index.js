@@ -1,3 +1,5 @@
-import DemoMolecule from './demo'
+import SimplePanel from './simplePanel'
+import AppBar from './appBar'
+import CurrentAllegations from './currentAllegations'
 
-export { DemoMolecule }
+export { SimplePanel, AppBar, CurrentAllegations }

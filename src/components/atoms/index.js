@@ -1,3 +1,3 @@
-import DemoAtom from './demo'
+import SeasonInfo from './seasonInfo'
 
-export { DemoAtom }
+export { SeasonInfo }

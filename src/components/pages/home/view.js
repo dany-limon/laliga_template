@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { SimplePanel, AppBar, CurrentAllegations } from '../../molecules'
 
 export default class Home extends Component {
   render() {
     return (
       <div>
-        <Link to="/demo">ir a pagina demo</Link>
+        <AppBar />
+        <SimplePanel title="alegaciones" code="BET" pending={2} dismissed={1} estimated={9} />
+        <SimplePanel title="Exenciones" code="BET" pending={2} dismissed={1} estimated={9} activated={1} />
+        <CurrentAllegations title="alegaciones actuales" code="BET" countDown="47 :  38  :  51" />
       </div>
     )
   }

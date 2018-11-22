@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="73px" height="73px" viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Escudo Copy 21</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M36.6297351,72.1431072 C16.9463066,72.1431072 0.989735072,56.1865357 0.989735072,36.5031072 C0.989735072,16.8196787 16.9463066,0.863107202 36.6297351,0.863107202 C56.3131636,0.863107202 72.2697351,16.8196787 72.2697351,36.5031072 C72.2697351,56.1865357 56.3131636,72.1431072 36.6297351,72.1431072 Z M36.6297351,69.9831072 C55.1202285,69.9831072 70.1097351,54.9936006 70.1097351,36.5031072 C70.1097351,18.0126138 55.1202285,3.0231072 36.6297351,3.0231072 C18.1392416,3.0231072 3.14973507,18.0126138 3.14973507,36.5031072 C3.14973507,54.9936006 18.1392416,69.9831072 36.6297351,69.9831072 Z" id="path-1"></path>
+    </defs>
+    <g id="Rol-CLUB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LALIAlegaciones1_CLUB" transform="translate(-354.000000, -378.000000)">
+            <g id="Group-8" transform="translate(106.000000, 260.000000)">
+                <g id="Escudo" transform="translate(246.000000, 116.000000)">
+                    <g id="KO">
+                        <g id="color/azul" transform="translate(1.980000, 1.980000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#654EA3" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            <g id="color/blanco" mask="url(#mask-2)" fill="#FFFFFF">
+                                <g transform="translate(-12.785143, -10.542162)" id="Rectangle-3">
+                                    <rect x="0" y="0" width="95.3585217" height="94.3547478"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

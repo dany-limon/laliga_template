@@ -15,7 +15,9 @@ This project was bootstrapped with Create React App
 * Prod:
     * build --> ```yarn build``` 
     * analyze --> ```yarn analyze```
-* Style guide --> ```yarn styleguide```
+* Style guide 
+    * des: ```yarn styleguide``` -->http://localhost:6060
+
 
 
 ## Proyect Folder Structure
