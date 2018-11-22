@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import * as Styled from './styled'
-import { SeasonInfo, CountDown, Breaches, ArrowBackgroundButton } from '../../atoms'
+import { SeasonInfo, CountDown, Breaches, ArrowButton } from '../../atoms'
 
 export default class CurrentAllegations extends PureComponent {
   static propTypes = {
@@ -26,8 +26,8 @@ export default class CurrentAllegations extends PureComponent {
         <SeasonInfo season={season} />
         <CountDown value={countDown} />
         <Breaches />
-        <ArrowBackgroundButton type="left" />
-        <ArrowBackgroundButton type="right" />
+        <ArrowButton type="left" />
+        <ArrowButton type="right" />
       </Styled.StatsSimple>
     )
   }

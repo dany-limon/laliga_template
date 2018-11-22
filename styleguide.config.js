@@ -3,7 +3,7 @@ const path = require('path')
 //theme --> https://github.com/styleguidist/react-styleguidist/blob/master/src/styles/theme.js
 module.exports = {
   theme: {
-    sidebarWidth: 250,
+    sidebarWidth: 220,
     color: {
       sidebarBackground: '#25282A',
       link: 'white',

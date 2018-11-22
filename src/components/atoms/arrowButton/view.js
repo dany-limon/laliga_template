@@ -4,7 +4,7 @@ import * as Styled from './styled'
 import arrow_left from '../../../assets/images/arrow_left.svg'
 import arrow_right from '../../../assets/images/arrow_right.svg'
 
-export default class ArrowBackgroundButton extends PureComponent {
+export default class ArrowButton extends PureComponent {
   static propTypes = {
     type: PropTypes.oneOf(['left', 'right']),
     onClick: PropTypes.func
@@ -19,9 +19,9 @@ export default class ArrowBackgroundButton extends PureComponent {
     const { type, onClick } = this.props
     const image = type === 'left' ? arrow_left : arrow_right
     return (
-      <Styled.ArrowBackgroundButton onClick={onClick}>
-        <img src={image} alr="arrow" />
-      </Styled.ArrowBackgroundButton>
+      <Styled.ArrowButton onClick={onClick}>
+        <img src={image} alt="arrow" />
+      </Styled.ArrowButton>
     )
   }
 }

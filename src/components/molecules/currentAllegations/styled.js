@@ -1,7 +1,5 @@
 import styled from 'styled-components/macro'
 
-const DEBUG_MODE = false
-
 export const TitleCode = styled.span`
   font-family: ${props => props.theme.fonts.CoreSans400};
 `

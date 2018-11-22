@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro'
 
-export const ArrowBackgroundButton = styled.button`
+export const ArrowButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;

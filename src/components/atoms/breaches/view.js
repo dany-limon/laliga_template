@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
 import * as Styled from './styled'
 import selectedBigImage from '../../../assets/images/selected_big.svg'
 import noSelectedBigImage from '../../../assets/images/no_selected_big.svg'
