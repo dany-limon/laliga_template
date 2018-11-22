@@ -6,7 +6,7 @@ export default class extends Component {
     return (
       <div>
         <img src={laLigaImage} style={{ width: 120 }} alt="logo" />
-        <p style={{ fontFamily: 'CoreSans', marginTop: 10, color: 'white', fontSize: 16 }}>Alegaciones</p>
+        <p style={{ fontFamily: 'CoreSans', marginTop: 10, color: 'white', fontSize: 18 }}>ALEGACIONES</p>
       </div>
     )
   }

@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import * as Styled from './styled'
 import i18n from '../../../assets/i18n'
 
-export default class SimplePanel extends Component {
+export default class SimplePanel extends PureComponent {
   static propTypes = {
     title: PropTypes.string,
     code: PropTypes.string,

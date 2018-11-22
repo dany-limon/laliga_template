@@ -1,6 +1,8 @@
 
+```js
+<SeasonInfo />
+```
 
 ```js
-<SeasonInfo season={1} />
-
+<SeasonInfo season={22} division='123'/>
 ```

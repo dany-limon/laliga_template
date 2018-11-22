@@ -16,7 +16,7 @@ This project was bootstrapped with Create React App
     * build --> ```yarn build``` 
     * analyze --> ```yarn analyze```
 * Style guide 
-    * des: ```yarn styleguide``` -->http://localhost:6060
+    * des: ```yarn styleguide``` 
 
 
 
@@ -156,6 +156,7 @@ This project was bootstrapped with Create React App
 * [doc](https://react-styleguidist.js.org/docs/getting-started.html)
 * Components with react-styleguidist have readme.md
 * Config by styleguide.config.js
+* Static web --> /styleguide/index.html
 
 
 ## Main Libraries

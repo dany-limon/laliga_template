@@ -1,12 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import * as Styled from './styled'
-import { SeasonInfo } from '../../atoms'
-import countDownImage from '../../../assets/images/countdown.svg'
-import selectedBigImage from '../../../assets/images/selected_big.svg'
-import noSelectedBigImage from '../../../assets/images/no_selected_big.svg'
+import { SeasonInfo, CountDown, Breaches, ArrowBackgroundButton } from '../../atoms'
 
-export default class CurrentAllegations extends Component {
+export default class CurrentAllegations extends PureComponent {
   static propTypes = {
     title: PropTypes.string,
     code: PropTypes.string,
@@ -26,11 +23,11 @@ export default class CurrentAllegations extends Component {
     return (
       <Styled.StatsSimple>
         <Title title={title} code={code} />
-        <Styled.Content>
-          <SeasonInfo season={season} />
-          <CountDown countDown={countDown} />
-          <Breaches />
-        </Styled.Content>
+        <SeasonInfo season={season} />
+        <CountDown value={countDown} />
+        <Breaches />
+        <ArrowBackgroundButton type="left" />
+        <ArrowBackgroundButton type="right" />
       </Styled.StatsSimple>
     )
   }
@@ -45,28 +42,4 @@ const Title = ({ title, code }) => (
     </p>
     <div />
   </Styled.Title>
-)
-
-const CountDown = ({ countDown }) => (
-  <Styled.ContentCountDown>
-    <img src={countDownImage} alt="countdown" />
-    <span>{countDown}</span>
-  </Styled.ContentCountDown>
-)
-
-const Breaches = ({ season }) => (
-  <Styled.ContentBreaches>
-    <Styled.ContentBreachesLeft>
-      <p>Bet</p>
-      <img src={selectedBigImage} alt="bet" />
-    </Styled.ContentBreachesLeft>
-    <Styled.ContentBreachesCenter>
-      <p>incumpliminetos</p>
-      <p>2</p>
-    </Styled.ContentBreachesCenter>
-    <Styled.ContentBreachesRight>
-      <p>Val</p>
-      <img src={noSelectedBigImage} alt="val" />
-    </Styled.ContentBreachesRight>
-  </Styled.ContentBreaches>
 )

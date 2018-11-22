@@ -17,6 +17,11 @@ export const GlobalStyle = createGlobalStyle`
     padding:0;
     margin:0;
   }
+  button{
+    padding:0;
+    margin:0;
+    border-width: 0;
+  }
 `
 
 export const theme = {
