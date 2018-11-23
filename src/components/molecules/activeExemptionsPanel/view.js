@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import * as Styled from './styled'
-import { SeasonInfo, CountDown, Breaches, ArrowButton, PanelTitle } from '../../atoms'
+import { PanelTitle } from '../../atoms'
 
-export default class ActiveExceptionsPanel extends PureComponent {
+export default class ActiveExemptionsPanel extends PureComponent {
   static propTypes = {
     title: PropTypes.string,
     code: PropTypes.string,
@@ -21,9 +21,9 @@ export default class ActiveExceptionsPanel extends PureComponent {
   }
 
   render() {
-    const { title, code, season, countDown, breaches } = this.props
+    const { title, code } = this.props
     return (
-      <Styled.ActiveExceptionsPanel>
+      <Styled.activeExemptionsPanel>
         <PanelTitle title={title} code={code} />
         <table>
           <thead>
@@ -63,7 +63,7 @@ export default class ActiveExceptionsPanel extends PureComponent {
             </tr>
           </tbody>
         </table>
-      </Styled.ActiveExceptionsPanel>
+      </Styled.activeExemptionsPanel>
     )
   }
 }

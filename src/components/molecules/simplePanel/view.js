@@ -40,17 +40,6 @@ export default class SimplePanel extends PureComponent {
   }
 }
 
-const Title = ({ title, code }) => (
-  <Styled.Title>
-    <p>
-      {code && <Styled.TitleCode>{code}</Styled.TitleCode>}
-      {code && <Styled.TitleSeparator>|</Styled.TitleSeparator>}
-      <Styled.TitleTitle>{title}</Styled.TitleTitle>
-    </p>
-    <div />
-  </Styled.Title>
-)
-
 const Item = ({ label, value }) => (
   <Styled.Item>
     <Styled.ItemValue>{value}</Styled.ItemValue>
