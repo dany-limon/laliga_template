@@ -8,8 +8,6 @@ export const CountDown = styled.div`
   background: ${props => (props.type === 'dark' ? props.theme.colors.black : props.theme.colors.white)};
   img {
     width: 20px;
-    height: 22px;
-    padding: 6px;
     background: ${props => props.theme.colors.purpleDark};
   }
 

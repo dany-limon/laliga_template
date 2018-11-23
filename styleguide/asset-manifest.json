@@ -1,9 +1,9 @@
 {
-  "main.js": "/build/main.ab45d564.js",
-  "build/0.0427819a.js": "/build/0.0427819a.js",
+  "main.js": "/build/main.52bf8727.js",
+  "build/0.cb801d42.js": "/build/0.cb801d42.js",
   "build/1.4430279b.js": "/build/1.4430279b.js",
   "runtime~main.js": "/build/bundle.4970557a.js",
-  "static/media/CoreSansC-85Heavy.eot": "/static/media/CoreSansC-85Heavy.de315b82.eot",
+  "static/media/CoreSansC-85Heavy.otf": "/static/media/CoreSansC-85Heavy.4400aca8.otf",
   "static/media/CoreSansC-35Light.eot": "/static/media/CoreSansC-35Light.1c59d4b5.eot",
   "static/media/CoreSansC-35Light.svg": "/static/media/CoreSansC-35Light.af41b589.svg",
   "static/media/CoreSansC-35Light.ttf": "/static/media/CoreSansC-35Light.66e0bceb.ttf",
@@ -43,8 +43,8 @@
   "static/media/CoreSansC-75ExtraBoldIt.svg": "/static/media/CoreSansC-75ExtraBoldIt.68328a48.svg",
   "static/media/CoreSansC-75ExtraBoldIt.ttf": "/static/media/CoreSansC-75ExtraBoldIt.ae227136.ttf",
   "static/media/CoreSansC-75ExtraBoldIt.woff": "/static/media/CoreSansC-75ExtraBoldIt.8dfd68e6.woff",
+  "static/media/CoreSansC-85Heavy.eot": "/static/media/CoreSansC-85Heavy.de315b82.eot",
   "static/media/CoreSansC-35Light.otf": "/static/media/CoreSansC-35Light.be2158cf.otf",
-  "static/media/CoreSansC-85Heavy.otf": "/static/media/CoreSansC-85Heavy.4400aca8.otf",
   "static/media/CoreSansC-85Heavy.svg": "/static/media/CoreSansC-85Heavy.e1f4a339.svg",
   "static/media/CoreSansC-85Heavy.ttf": "/static/media/CoreSansC-85Heavy.670a9766.ttf",
   "static/media/CoreSansC-85Heavy.woff": "/static/media/CoreSansC-85Heavy.ec6be60a.woff",
@@ -77,7 +77,9 @@
   "static/media/laliga_123_white.svg": "/static/media/laliga_123_white.8b7e64cb.svg",
   "static/media/laliga_logo.svg": "/static/media/laliga_logo.230fcb2b.svg",
   "static/media/laliga_santander_white.svg": "/static/media/laliga_santander_white.9381f04c.svg",
+  "static/media/no_selected.svg": "/static/media/no_selected.ab950314.svg",
   "static/media/no_selected_big.svg": "/static/media/no_selected_big.27cb401b.svg",
+  "static/media/selected.svg": "/static/media/selected.a90344ee.svg",
   "static/media/selected_big.svg": "/static/media/selected_big.5a061a57.svg",
   "index.html": "/index.html"
 }
