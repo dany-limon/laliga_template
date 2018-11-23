@@ -5,7 +5,7 @@ export const CountDown = styled.div`
   display: flex;
   align-items: center;
   align-self: center;
-  background: ${props => (props.dark ? props.theme.colors.black : props.theme.colors.white)};
+  background: ${props => (props.type === 'dark' ? props.theme.colors.black : props.theme.colors.white)};
   img {
     width: 20px;
     height: 22px;
@@ -15,7 +15,7 @@ export const CountDown = styled.div`
 
   span {
     text-align: center;
-    color: ${props => (props.dark ? props.theme.colors.white : props.theme.colors.black)};
+    color: ${props => (props.type === 'dark' ? props.theme.colors.white : props.theme.colors.black)};
     padding-top: 6px;
     font-family: ${props => props.theme.fonts.CoreSans500};
     flex: 1;

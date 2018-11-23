@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import * as Styled from './styled'
 import i18n from '../../../assets/i18n'
+import { PanelTitle } from '../../atoms'
 
 export default class SimplePanel extends PureComponent {
   static propTypes = {
@@ -25,7 +26,7 @@ export default class SimplePanel extends PureComponent {
     const { title, code, pending, dismissed, estimated, activated } = this.props
     return (
       <Styled.StatsSimple>
-        <Title title={title} code={code} />
+        <PanelTitle title={title} code={code} centered />
         <Styled.Content>
           <Item value={pending} label={i18n.pending} />
           <Styled.Separator />

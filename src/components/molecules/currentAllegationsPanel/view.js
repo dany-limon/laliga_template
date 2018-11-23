@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import * as Styled from './styled'
-import { SeasonInfo, CountDown, Breaches, ArrowButton } from '../../atoms'
+import { SeasonInfo, CountDown, Breaches, ArrowButton, PanelTitle } from '../../atoms'
 
 export default class CurrentAllegationsPanel extends PureComponent {
   static propTypes = {
@@ -24,7 +24,7 @@ export default class CurrentAllegationsPanel extends PureComponent {
     const { title, code, season, countDown, breaches } = this.props
     return (
       <Styled.CurrentAllegationsPanel>
-        <Title title={title} code={code} />
+        <PanelTitle title={title} code={code} />
         <SeasonInfo season={season} />
         <CountDown value={countDown} />
         <Breaches codeLeft={code} codeRight={code} value={breaches} />
@@ -34,14 +34,3 @@ export default class CurrentAllegationsPanel extends PureComponent {
     )
   }
 }
-
-const Title = ({ title, code }) => (
-  <Styled.Title>
-    <p>
-      {code && <Styled.TitleCode>{code}</Styled.TitleCode>}
-      {code && <Styled.TitleSeparator>|</Styled.TitleSeparator>}
-      <Styled.TitleTitle>{title}</Styled.TitleTitle>
-    </p>
-    <div />
-  </Styled.Title>
-)

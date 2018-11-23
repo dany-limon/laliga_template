@@ -6,12 +6,12 @@ import countDownImage from '../../../assets/images/countdown.svg'
 export default class CountDown extends PureComponent {
   static propTypes = {
     value: PropTypes.string,
-    dark: PropTypes.bool
+    type: PropTypes.oneOf(['light', 'dark'])
   }
 
   static defaultProps = {
     value: '',
-    dark: true
+    type: 'dark'
   }
 
   render() {
