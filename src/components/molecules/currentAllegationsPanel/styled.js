@@ -31,7 +31,8 @@ export const Title = styled.span`
   }
 `
 
-export const StatsSimple = styled.div`
+export const CurrentAllegationsPanel = styled.div`
   position: relative;
   background: ${props => props.theme.colors.purple};
+  border-bottom: 2px solid ${props => props.theme.colors.black};
 `

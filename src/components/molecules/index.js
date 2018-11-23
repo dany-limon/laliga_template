@@ -1,5 +1,6 @@
 import SimplePanel from './simplePanel'
 import AppBar from './appBar'
-import CurrentAllegations from './currentAllegations'
+import CurrentAllegationsPanel from './currentAllegationsPanel'
+import CurrentAllegationsList from './currentAllegationsList'
 
-export { SimplePanel, AppBar, CurrentAllegations }
+export { SimplePanel, AppBar, CurrentAllegationsPanel, CurrentAllegationsList }

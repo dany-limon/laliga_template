@@ -6,7 +6,7 @@ export const SeasonInfo = styled.div`
   background: ${DEBUG_MODE ? 'red' : 'transparent'};
   justify-content: center;
   align-items: center;
-  display: inline-flex;
+  display: flex;
   img {
     height: 20px;
     margin-right: 20px;
