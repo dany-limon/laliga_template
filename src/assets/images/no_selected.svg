@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Escudo Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18.4998662,36.4359127 C8.5587407,36.4359127 0.499866198,28.3770382 0.499866198,18.4359127 C0.499866198,8.49478723 8.5587407,0.435912728 18.4998662,0.435912728 C28.4409917,0.435912728 36.4998662,8.49478723 36.4998662,18.4359127 C36.4998662,28.3770382 28.4409917,36.4359127 18.4998662,36.4359127 Z M18.4998662,35.3450036 C27.8384992,35.3450036 35.4089571,27.7745458 35.4089571,18.4359127 C35.4089571,9.09727969 27.8384992,1.52682182 18.4998662,1.52682182 C9.16123316,1.52682182 1.59077529,9.09727969 1.59077529,18.4359127 C1.59077529,27.7745458 9.16123316,35.3450036 18.4998662,35.3450036 Z" id="path-1"></path>
+    </defs>
+    <g id="Rol-LIGA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LALIAlegaciones2_LALIGA" transform="translate(-114.000000, -131.000000)">
+            <g id="Group-5" transform="translate(32.000000, 65.000000)">
+                <g id="Group-15" transform="translate(81.000000, 65.000000)">
+                    <g id="Escudo">
+                        <g id="KO">
+                            <g id="color/azul" transform="translate(1.000000, 1.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#654EA3" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="color/gris" mask="url(#mask-2)" fill="#D8D8D8">
+                                    <g transform="translate(-6.457143, -5.324324)" id="Rectangle-3">
+                                        <rect x="0" y="0" width="48.2482759" height="48.2482759"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

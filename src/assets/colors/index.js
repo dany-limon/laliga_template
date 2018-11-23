@@ -8,6 +8,7 @@ export default {
   red: '#D20028',
   green: '#00B388',
   white: '#FFFFFF',
+  white30: 'rgba(255, 255, 255, 0.3)',
   grey: '#D8D8D8',
   darkGrey: '#C3C3C3'
 }
