@@ -6,5 +6,6 @@ export default {
   dismissed: 'Desestimadas',
   estimated: 'Estimadas',
   activated: 'Activas',
-  seasonNumber: 'jornada {0}'
+  seasonNumber: 'jornada {0}',
+  breaches: 'incumplimientos'
 }

@@ -16,7 +16,7 @@ export default class AppBar extends PureComponent {
         <Styled.Content>
           <Styled.Background src={completo_gris} alt="escudo_demo" />
         </Styled.Content>
-        <Styled.LaLigaLogo src={laLigaImage} alt="LaLiga logo" className={this.props.className} />
+        <Styled.LaLigaLogo src={laLigaImage} alt="LaLiga logo" />
         <Styled.Title>{i18n.allegationsAndExemptions}</Styled.Title>
         <Styled.ClubImage src={escudo_demo} alt="escudo_demo" />
         <Styled.Separator />
