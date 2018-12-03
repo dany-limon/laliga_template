@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import laLigaImage from '../assets/images/laliga_logo.svg'
+import laLigaImage from '../../assets/images/laliga_logo.svg'
 
 export default class extends Component {
   render() {

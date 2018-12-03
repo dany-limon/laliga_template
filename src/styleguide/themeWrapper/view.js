@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { theme, GlobalStyle } from '../config/styled'
+import { theme, GlobalStyle } from '../../config/styled'
 
 export default class ThemeWrapper extends Component {
   render() {

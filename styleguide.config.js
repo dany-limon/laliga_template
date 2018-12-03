@@ -24,8 +24,8 @@ module.exports = {
   components: ['src/components/atoms/**/*.js', 'src/components/molecules/**/*.js'],
   ignore: ['**/__tests__/**', '**/*.test.{js,jsx,ts,tsx}', '**/*.spec.{js,jsx,ts,tsx}', '**/*.d.ts', '**/test.js', '**/index.js', '**/styled.js'],
   styleguideComponents: {
-    Wrapper: path.join(__dirname, 'src/styleguide/ThemeWrapper'),
-    Logo: path.join(__dirname, 'src/styleguide/Logo')
+    Wrapper: path.join(__dirname, 'src/styleguide/themeWrapper/view'),
+    Logo: path.join(__dirname, 'src/styleguide/logo/view')
   },
   sections: [
     {
