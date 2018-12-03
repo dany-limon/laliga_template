@@ -7,6 +7,7 @@ import createHistory from 'history/createBrowserHistory'
 import _ from 'lodash'
 import { reducers } from '../redux'
 import { AuthOperations } from '../redux/auth'
+import * as apiConfig from '../config/api'
 import * as api from '../api'
 import i18n from '../assets/i18n'
 
@@ -42,10 +43,10 @@ const configurePersistStore = () => {
   }
 
   const persistRouterReducer = persistCombineReducers(rootPersistConfig, rootReducer)
-  const thunkMiddleware = thunk.withExtraArgument({ api, i18n })
+  const thunkMiddleware = thunk.withExtraArgument({ api, i18n, apiConfig })
   const middlewares = applyMiddleware(thunkMiddleware, loggerMiddleware)
   const store = createStore(persistRouterReducer, middlewares)
-  const persistor = persistStore(store, {}, store.dispatch(AuthOperations.startApp()))
+  const persistor = persistStore(store, {}, store.dispatch(AuthOperations.checkSession()))
   return { persistor, store }
 }
 const { persistor, store } = configurePersistStore()

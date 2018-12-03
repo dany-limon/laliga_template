@@ -1,25 +1,27 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { Route, Switch } from 'react-router-dom'
 import { SpinnerBackground } from '../../organisms'
 import * as pages from '../../pages'
 
-const LoggedApp = () => {
+const AppSession = ({ sesionLoaded }) => {
+  if (!sesionLoaded) return <div />
   return (
     <Switch>
       <Route path="/demo" component={pages.Demo} />
+      <Route exact path="/" component={pages.Home} />
       <Route component={pages.Home} />
     </Switch>
   )
 }
 
-//const UnauthorizedApp = () => <div />
+const AppSessionConnectd = connect(
+  state => ({ sesionLoaded: state.auth.sesionLoaded }),
+  null
+)(AppSession)
 
-const Routes = ({ token }) => {
-  //const App = token ? <LoggedApp /> : <UnauthorizedApp />
-  return (
-    <SpinnerBackground>
-      <LoggedApp />
-    </SpinnerBackground>
-  )
-}
-export default Routes
+export default () => (
+  <SpinnerBackground>
+    <AppSessionConnectd />
+  </SpinnerBackground>
+)

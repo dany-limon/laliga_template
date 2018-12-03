@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro'
 
-export const activeExemptionsPanel = styled.div`
+export const ActiveExemptionsPanel = styled.div`
   background: ${props => props.theme.colors.purple80};
   table {
     color: ${props => props.theme.colors.white};

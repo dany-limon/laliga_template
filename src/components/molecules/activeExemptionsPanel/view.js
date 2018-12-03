@@ -23,7 +23,7 @@ export default class ActiveExemptionsPanel extends PureComponent {
   render() {
     const { title, code } = this.props
     return (
-      <Styled.activeExemptionsPanel>
+      <Styled.ActiveExemptionsPanel>
         <PanelTitle title={title} code={code} />
         <table>
           <thead>
@@ -63,7 +63,7 @@ export default class ActiveExemptionsPanel extends PureComponent {
             </tr>
           </tbody>
         </table>
-      </Styled.activeExemptionsPanel>
+      </Styled.ActiveExemptionsPanel>
     )
   }
 }
