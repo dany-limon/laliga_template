@@ -36,7 +36,9 @@
     "analyze": "source-map-explorer build/static/js/main.*",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "lint-cli": "eslint ./src",
+    "test-cli": "CI=true react-scripts test --env=jsdom --maxWorkers=2"
   },
   "eslintConfig": {
     "extends": "react-app"
