@@ -42,7 +42,7 @@ const ClubItem = ({ left, code, selected }) => (
 )
 
 ClubItem.propTypes = {
-  left: PropTypes.string,
+  left: PropTypes.bool,
   code: PropTypes.string,
   selected: PropTypes.bool
 }
@@ -55,5 +55,5 @@ const ValueItem = ({ value }) => (
 )
 
 ValueItem.propTypes = {
-  value: PropTypes.string
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
