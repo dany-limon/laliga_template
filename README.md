@@ -10,6 +10,7 @@ This project was bootstrapped with Create React App
 
 * Des: ```yarn start```
 * Test: ```yarn test``` | ```yarn test --coverage```
+* Linter: ```yarn linter```
 * Prod:
     * build --> ```yarn build``` 
     * analyze --> ```yarn analyze```
@@ -153,3 +154,9 @@ This project was bootstrapped with Create React App
 * [Lodash](https://lodash.com/)
 * [Moment](https://momentjs.com/)
 * [Jest](https://facebook.github.io/jest/)
+
+
+## TODO
+
+* Change SpinnerBackground to styled-component
+* Load fonts in Global styled-component
