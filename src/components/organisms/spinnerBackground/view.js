@@ -1,8 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import './spinner.css'
 
-export default ({ children, isFetching, label }) => (
+const SpinnerBackground = ({ children, isFetching, label }) => (
   <div className={classNames({ 'spinner-active': isFetching })}>
     <div className="LaLigaHolder-bg">
       <div className="spinner-text">
@@ -16,3 +17,11 @@ export default ({ children, isFetching, label }) => (
     {children}
   </div>
 )
+
+SpinnerBackground.propTypes = {
+  children: PropTypes.object,
+  isFetching: PropTypes.bool,
+  label: PropTypes.string
+}
+
+export default SpinnerBackground

@@ -1,3 +1,5 @@
+/*eslint-disable no-console */
+
 import moment from 'moment'
 import axios from 'axios'
 
@@ -6,12 +8,7 @@ const showLogs = process.env.NODE_ENV === `development` && console.groupEnd
 export const config = values => {
   if (!showLogs) return
 
-  console.groupCollapsed(
-    ' %capi %cconfig %c@ ' + moment(Date.now()).format('HH:MM:SS.mmm'),
-    'color:grey; font-weight: 100',
-    'font-weight: bold',
-    'color:grey'
-  )
+  console.groupCollapsed(' %capi %cconfig %c@ ' + moment(Date.now()).format('HH:MM:SS.mmm'), 'color:grey; font-weight: 100', 'font-weight: bold', 'color:grey')
 
   console.log('parameters%o', values)
 

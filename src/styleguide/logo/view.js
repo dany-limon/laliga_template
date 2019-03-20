@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import laLigaImage from '../../assets/images/laliga_logo.svg'
 
-export default class extends Component {
+export default class Logo extends Component {
   render() {
     return (
       <div>

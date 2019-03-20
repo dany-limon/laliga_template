@@ -1,4 +1,4 @@
-export const configure = token => {}
+export const configure = () => {}
 
 export const logIn = () => new Promise(resolve => resolve({ token: '1234' }))
 

@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import _ from 'lodash'
+import PropTypes from 'prop-types'
 import * as Styled from './styled'
 import escudo_demo from '../../../assets/images/escudo_demo.svg'
 import noSelectedImage from '../../../assets/images/no_selected.svg'
@@ -28,3 +29,7 @@ const Item = ({ selected }) => (
     <img src={selected ? selectedImage : noSelectedImage} alt="selector" />
   </Styled.Item>
 )
+
+Item.propTypes = {
+  selected: PropTypes.bool
+}

@@ -41,9 +41,19 @@ const ClubItem = ({ left, code, selected }) => (
   </Styled.ClubItem>
 )
 
+ClubItem.propTypes = {
+  left: PropTypes.string,
+  code: PropTypes.string,
+  selected: PropTypes.bool
+}
+
 const ValueItem = ({ value }) => (
   <Styled.ValueItem>
     <p>{i18n.breaches}</p>
     <p>{value}</p>
   </Styled.ValueItem>
 )
+
+ValueItem.propTypes = {
+  value: PropTypes.string
+}

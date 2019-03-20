@@ -29,3 +29,8 @@ const Item = ({ selected, division }) => (
     <img src={division === 'santander' ? laliga_santander_white : laliga_123_white} alt="laliga" />
   </Styled.Item>
 )
+
+Item.propTypes = {
+  selected: PropTypes.bool,
+  division: PropTypes.string
+}

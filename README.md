@@ -1,11 +1,9 @@
 
-Alegaciones frontal. Desarrollada en ReactJS.
+Boiler Template de LaLiga. Desarrollada en ReactJS.
 
 ## Create React App
 
 This project was bootstrapped with Create React App
-* [repo](https://github.com/facebookincubator/create-react-app).
-* [doc](https://facebook.github.io/create-react-app)
 
 
 ## Scripts
@@ -19,15 +17,8 @@ This project was bootstrapped with Create React App
     * des: ```yarn styleguide``` 
 
 
-## API DOC
-
-* https://desalegaciones.laliga.es/api/doc/
-
 
 ## Proyect Folder Structure
-
-* [Better organize your React App](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1)
-* [Organizing a React Native Project](https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0)
 
 ```
   /
@@ -70,9 +61,6 @@ This project was bootstrapped with Create React App
 
 ## Redux Folder Structure
 
-* [Reducks - duck folders](https://github.com/alexnm/re-ducks)
-* Actions with [Flux Standard Action pattern](https://github.com/redux-utilities/flux-standard-action)
-
 ```
   /                 
   ├── src/                                 
@@ -95,10 +83,6 @@ This project was bootstrapped with Create React App
 
 
 ## Visual Components Folder Structure
-
-* [Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
-* [atomic design](http://bradfrost.com/blog/post/atomic-web-design/)
-* [¿Qué es el diseño atómico?](https://medium.com/pixel-perfect/qué-es-el-diseño-atómico-a5cbed06688e)
 
 ```                   
   ├── src/                                                    
@@ -124,23 +108,18 @@ This project was bootstrapped with Create React App
 
 
 ## Real Hot Reloading
+
 [hot-reloading-create-react-app](https://medium.com/superhighfives/hot-reloading-create-react-app-73297a00dcad)
 
 
 ## Code Formatter with Prettier
 
-* [repo](https://github.com/prettier/prettier)
-* [doc](https://prettier.io/)
-
 - Install prettier (VSCode extension)
-- Menu>Preferences>config>User Config
-- Add:
-```
-    "editor.formatOnSave": false,
-    "[javascript]": {
-        "editor.formatOnSave": true
-    }
-```
+
+
+## Linter with ESLint
+
+- Install ESLint (VSCode extension)
 
 
 ## Styled Components

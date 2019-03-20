@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Route, Switch } from 'react-router-dom'
 import { SpinnerBackground } from '../../organisms'
@@ -15,13 +16,19 @@ const AppSession = ({ sesionLoaded }) => {
   )
 }
 
+AppSession.propTypes = {
+  sesionLoaded: PropTypes.bool
+}
+
 const AppSessionConnectd = connect(
   state => ({ sesionLoaded: state.auth.sesionLoaded }),
   null
 )(AppSession)
 
-export default () => (
+const Routes = () => (
   <SpinnerBackground>
     <AppSessionConnectd />
   </SpinnerBackground>
 )
+
+export default Routes

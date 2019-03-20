@@ -7,7 +7,7 @@ import { store, persistor } from '../../../config/redux'
 import { GlobalStyle, theme } from '../../../config/styled'
 import { ThemeProvider } from 'styled-components/macro'
 
-export default () => (
+const App = () => (
   <React.Fragment>
     <GlobalStyle />
     <Provider store={store}>
@@ -21,3 +21,5 @@ export default () => (
     </Provider>
   </React.Fragment>
 )
+
+export default App

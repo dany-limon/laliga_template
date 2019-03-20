@@ -46,3 +46,8 @@ const Item = ({ label, value }) => (
     <Styled.ItemLabel>{label}</Styled.ItemLabel>
   </Styled.Item>
 )
+
+Item.propTypes = {
+  label: PropTypes.string,
+  value: PropTypes.string
+}
